@@ -1,0 +1,14 @@
+#!/bin/bash
+ #Lab 3 Expert
+echo 'First task'
+ wget http://factorized.net/crusoe.txt
+ grep -o -i '\bz\w*' crusoe.txt
+ 
+ grep -o -i '\ba\w*c\b' crusoe.txt
+ grep -o -i '\bab[^o]\w*\b ' crusoe.txt
+echo 'Second task'
+ wget http://factorized.net/patterns.txt
+ grep -i '^[0-9]*$' patterns.txt
+ grep -i '^[a-z]*$' patterns.txt
+echo 'Third task'
+ 
