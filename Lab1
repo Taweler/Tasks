@@ -1,0 +1,11 @@
+#!/bin/bash
+# Lab 1 Expert
+echo 'First task'
+wget http://factorized.net/crusoe.txt
+ grep -c 'Friday' crusoe.txt #  First task
+echo 'Second task'
+ sed 's/Friday/Saturday/' crusoe.txt # Second task
+echo 'Third task, Second variant'
+ touch test.txt
+ nano test.txt
+ awk '{ x=x+$1; y=y+$2} END { print x, y}' test.txt
