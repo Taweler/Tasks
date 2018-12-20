@@ -2,13 +2,20 @@
  # Lab 2 Expert
 echo 'First task for file'
  touch shared.txt
- ls -la shared.txt
+ ls -l shared.txt
 echo 'Second task for file'
  chmod 400 shared.txt
- ls -la shared.txt
+ ls -l shared.txt
+echo 'Third task for file'
+ chown lakhanskii shared.txt
+ chown bondarev shared.txt
+echo 'Forth task'
 echo 'First task for directory'
  touch shared
  ls -la shared
 echo 'Second task for directory'
  chmod 400 shared
  ls -la shared
+echo 'Third task for directory'
+ chown lakhanskii shared
+ chown bondarev shared
