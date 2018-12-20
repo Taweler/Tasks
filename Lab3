@@ -3,7 +3,7 @@
 echo 'First task'
  wget http://factorized.net/crusoe.txt
  grep -o -i '\bz\w*' crusoe.txt
- 
+ egrep -o -i '\b[a-z]{16}\b' crusoe.txt
  grep -o -i '\ba\w*c\b' crusoe.txt
  grep -o -i '\bab[^o]\w*\b ' crusoe.txt
 echo 'Second task'
@@ -11,4 +11,4 @@ echo 'Second task'
  grep -i '^[0-9]*$' patterns.txt
  grep -i '^[a-z]*$' patterns.txt
 echo 'Third task'
- 
+ egrep -0 '\b[ABEKMHOPCTYX]{1}[0-9]{3}[ABEKMHOPCTYX]{2}[0-9]{2,3}\b' patterns.txt
